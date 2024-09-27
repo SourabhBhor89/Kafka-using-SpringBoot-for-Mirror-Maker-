@@ -18,7 +18,7 @@ public class KafkaProducer {
     // Method to send a message to the "target-topic"
     public void sendMessage(String message) {
         LOGGER.info("Sending message: {}", message);
-        kafkaTemplate.send("my-topic", message); // Ensure this matches your target topic name
+        kafkaTemplate.send("JAVA", message); // Ensure this matches your target topic name
     }
 }
 
